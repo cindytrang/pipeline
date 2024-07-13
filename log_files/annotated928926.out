@@ -1,0 +1,86 @@
+
+---            Run settings            ---
+           eval_mode: segments
+         window_size: 124
+              run_id: 2024-04-04_14-04-31__bert_classifier_on_PAN12_with_seq-len-512
+       model_version: non_quantized
+             threads: 5
+               split: test
+     model_indicator: bert_classifier
+             seq_len: 512
+   dataset_indicator: Corpus
+             project: flair
+            data_dir: datasets/Corpus/
+             run_dir: resources/2024-04-04_14-04-31__bert_classifier_on_PAN12_with_seq-len-512/
+Datapack structure:
+{
+    "chats": {
+        "chat0": {
+            "className": "predator",
+            "content": [
+                {
+                    "author": "decoy",
+                    "body": "Hey Its Mads",
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 1,
+                    "time": 1672584000000,
+                    "type": "message"
+                },
+                {
+                    "author": "Billy Joe",
+                    "body": "Hey babes",
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 2,
+                    "time": 1672584000000,
+                    "type": "message"
+                },
+                {
+                    "author": "Billy Joe",
+                    "body": "Almost done with work. So glad",
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 3,
+                    "time": 167258406000
+
+Sample chat segment (First chat name: chat0)
+{
+    "className": "predator",
+    "content": [
+        {
+            "author": "decoy",
+            "body": "Hey Its Mads",
+            "isFromPredator": true,
+            "labels": [
+                "Trust Development and Establishing Credibility"
+            ],
+            "lineNum": 1,
+            "time": 1672584000000,
+            "type": "message"
+        },
+        {
+            "author": "Billy Joe",
+            "body": "Hey babes",
+            "isFromPredator": true,
+            "labels": [],
+            "lineNum": 2,
+            "time": 1672584000000,
+            "type": "message"
+        },
+        {
+            "author": "Billy Joe",
+            "body": "Almost done with work. So glad",
+            "isFromPredator": true,
+            "labels": [],
+            "lineNum": 3,
+            "time": 1672584060000,
+            "type": "message"
+        },
+        {
+            "author": "decoy",
+            "body": "Hey:) that's good right?",
+            "isFromPredator": true,
+   
+-------------------------------done printing out the first chat----------------------------------------
+Starting work on 13822 chats (which might have multiple segments each)

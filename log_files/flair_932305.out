@@ -1,0 +1,593 @@
+
+---            Run settings            ---
+     model_indicator: bert_classifier
+             seq_len: 512
+   dataset_indicator: Corpus
+             project: flair
+              run_id: 2024-04-27_12-54-55__bert_classifier_on_PAN12_with_seq-len-512
+            data_dir: datasets/Corpus/
+             run_dir: resources/2024-04-27_12-54-55__bert_classifier_on_PAN12_with_seq-len-512/
+2024-04-27 12:54:55,700 Reading data from datasets/Corpus
+2024-04-27 12:54:55,700 Train: datasets/Corpus/balanced_training_data.csv
+2024-04-27 12:54:55,700 Dev: None
+2024-04-27 12:54:55,700 Test: datasets/Corpus/testing_data.csv
+2024-04-27 12:54:57,360 Filtering empty sentences
+2024-04-27 12:55:07,544 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:55:15,560 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:55:33,478 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:55:35,456 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:55:47,182 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:55:48,273 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:55:52,686 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:55:52,946 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:55:54,446 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:55:56,690 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:55:59,089 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:56:09,448 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:56:13,483 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:56:16,217 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:56:19,395 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:56:23,274 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:56:23,513 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:56:24,728 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:56:30,183 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:56:31,695 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:56:38,898 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:56:41,265 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:56:47,783 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:56:48,191 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:56:59,804 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:57:05,085 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:57:07,760 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:57:36,236 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 12:57:41,020 Corpus: 60223 train + 6692 dev + 66913 test sentences
+Corpus Statistics: {
+    "TRAIN": {
+        "dataset": "TRAIN",
+        "total_number_of_documents": 6022,
+        "number_of_documents_per_class": {
+            "non-predator": 2631,
+            "predator": 3391
+        },
+        "number_of_tokens_per_tag": {},
+        "number_of_tokens": {
+            "total": 625256,
+            "min": 1,
+            "max": 15852,
+            "avg": 103.82862836267022
+        }
+    },
+    "TEST": {
+        "dataset": "TEST",
+        "total_number_of_documents": 6691,
+        "number_of_documents_per_class": {
+            "predator": 3627,
+            "non-predator": 3064
+        },
+        "number_of_tokens_per_tag": {},
+        "number_of_tokens": {
+            "total": 747244,
+            "min": 1,
+            "max": 62087,
+            "avg": 111.67897175310118
+        }
+    },
+    "DEV": {
+        "dataset": "DEV",
+        "total_number_of_documents": 669,
+        "number_of_documents_per_class": {
+            "non-predator": 299,
+            "predator": 370
+        },
+        "number_of_tokens_per_tag": {},
+        "number_of_tokens": {
+            "total": 71709,
+            "min": 1,
+            "max": 5021,
+            "avg": 107.18834080717488
+        }
+    }
+}
+2024-04-27 12:58:30,359 Computing label dictionary. Progress:
+2024-04-27 12:58:37,945 Dictionary created for label 'class' with 3 values: predator (seen 3391 times), non-predator (seen 2631 times)
+2024-04-27 12:58:42,431 ----------------------------------------------------------------------------------------------------
+2024-04-27 12:58:42,432 Model: "TextClassifier(
+  (embeddings): TransformerDocumentEmbeddings(
+    (model): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(119548, 768)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (1): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (2): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (3): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (4): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (5): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (6): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (7): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (8): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (9): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (10): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (11): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+  )
+  (decoder): Linear(in_features=768, out_features=3, bias=True)
+  (dropout): Dropout(p=0.0, inplace=False)
+  (locked_dropout): LockedDropout(p=0.0)
+  (word_dropout): WordDropout(p=0.0)
+  (loss_function): CrossEntropyLoss()
+  (weights): None
+  (weight_tensor) None
+)"
+2024-04-27 12:58:42,432 ----------------------------------------------------------------------------------------------------
+2024-04-27 12:58:42,433 Corpus: "Corpus: 6022 train + 669 dev + 6691 test sentences"
+2024-04-27 12:58:42,433 ----------------------------------------------------------------------------------------------------
+2024-04-27 12:58:42,433 Parameters:
+2024-04-27 12:58:42,433  - learning_rate: "0.000030"
+2024-04-27 12:58:42,433  - mini_batch_size: "8"
+2024-04-27 12:58:42,433  - patience: "3"
+2024-04-27 12:58:42,433  - anneal_factor: "0.5"
+2024-04-27 12:58:42,433  - max_epochs: "3"
+2024-04-27 12:58:42,433  - shuffle: "True"
+2024-04-27 12:58:42,433  - train_with_dev: "False"
+2024-04-27 12:58:42,433  - batch_growth_annealing: "False"
+2024-04-27 12:58:42,433 ----------------------------------------------------------------------------------------------------
+2024-04-27 12:58:42,433 Model training base path: "resources/2024-04-27_12-54-55__bert_classifier_on_PAN12_with_seq-len-512/non_quantized"
+2024-04-27 12:58:42,433 ----------------------------------------------------------------------------------------------------
+2024-04-27 12:58:42,433 Device: cuda:0
+2024-04-27 12:58:42,433 ----------------------------------------------------------------------------------------------------
+2024-04-27 12:58:42,433 Embeddings storage mode: cpu
+2024-04-27 12:58:42,433 ----------------------------------------------------------------------------------------------------
+2024-04-27 12:58:53,328 epoch 1 - iter 75/753 - loss 1.08322205 - time (sec): 10.89 - samples/sec: 55.07 - lr: 0.000030
+2024-04-27 12:59:04,242 epoch 1 - iter 150/753 - loss 0.91789974 - time (sec): 21.81 - samples/sec: 55.02 - lr: 0.000030
+2024-04-27 12:59:14,254 epoch 1 - iter 225/753 - loss 0.84449735 - time (sec): 31.82 - samples/sec: 56.57 - lr: 0.000030
+2024-04-27 12:59:24,850 epoch 1 - iter 300/753 - loss 0.80009403 - time (sec): 42.42 - samples/sec: 56.58 - lr: 0.000030
+2024-04-27 12:59:35,708 epoch 1 - iter 375/753 - loss 0.77208936 - time (sec): 53.28 - samples/sec: 56.31 - lr: 0.000030
+2024-04-27 12:59:46,121 epoch 1 - iter 450/753 - loss 0.75647080 - time (sec): 63.69 - samples/sec: 56.53 - lr: 0.000030
+2024-04-27 12:59:57,095 epoch 1 - iter 525/753 - loss 0.73882923 - time (sec): 74.66 - samples/sec: 56.25 - lr: 0.000030
+2024-04-27 13:00:07,605 epoch 1 - iter 600/753 - loss 0.72700850 - time (sec): 85.17 - samples/sec: 56.36 - lr: 0.000030
+2024-04-27 13:00:18,774 epoch 1 - iter 675/753 - loss 0.71996201 - time (sec): 96.34 - samples/sec: 56.05 - lr: 0.000030
+2024-04-27 13:00:29,024 epoch 1 - iter 750/753 - loss 0.71369470 - time (sec): 106.59 - samples/sec: 56.29 - lr: 0.000030
+2024-04-27 13:00:29,335 ----------------------------------------------------------------------------------------------------
+2024-04-27 13:00:29,335 EPOCH 1 done: loss 0.7132 - lr 0.000030
+2024-04-27 13:01:14,936 Evaluating as a multi-label problem: False
+2024-04-27 13:01:14,960 TRAIN : loss 0.6147533059120178 - f1-score (micro avg)  0.6773
+2024-04-27 13:01:29,615 Evaluating as a multi-label problem: False
+2024-04-27 13:01:29,621 DEV : loss 0.6189151406288147 - f1-score (micro avg)  0.6756
+2024-04-27 13:02:22,403 Evaluating as a multi-label problem: False
+2024-04-27 13:02:22,430 TEST : loss 0.7663938403129578 - f1-score (micro avg)  0.515
+2024-04-27 13:02:32,392 BAD EPOCHS (no improvement): 0
+2024-04-27 13:02:43,163 saving best model
+2024-04-27 13:02:53,551 ----------------------------------------------------------------------------------------------------
+2024-04-27 13:03:04,067 epoch 2 - iter 75/753 - loss 0.61690877 - time (sec): 10.52 - samples/sec: 57.06 - lr: 0.000030
+2024-04-27 13:03:15,877 epoch 2 - iter 150/753 - loss 0.62191405 - time (sec): 22.33 - samples/sec: 53.75 - lr: 0.000030
+2024-04-27 13:03:26,842 epoch 2 - iter 225/753 - loss 0.62056110 - time (sec): 33.29 - samples/sec: 54.07 - lr: 0.000030
+2024-04-27 13:03:37,723 epoch 2 - iter 300/753 - loss 0.62699690 - time (sec): 44.17 - samples/sec: 54.33 - lr: 0.000030
+2024-04-27 13:03:47,864 epoch 2 - iter 375/753 - loss 0.62432608 - time (sec): 54.31 - samples/sec: 55.24 - lr: 0.000030
+2024-04-27 13:03:58,476 epoch 2 - iter 450/753 - loss 0.62134967 - time (sec): 64.93 - samples/sec: 55.45 - lr: 0.000030
+2024-04-27 13:04:08,683 epoch 2 - iter 525/753 - loss 0.62241316 - time (sec): 75.13 - samples/sec: 55.90 - lr: 0.000030
+2024-04-27 13:04:19,328 epoch 2 - iter 600/753 - loss 0.62211640 - time (sec): 85.78 - samples/sec: 55.96 - lr: 0.000030
+2024-04-27 13:04:29,775 epoch 2 - iter 675/753 - loss 0.61977743 - time (sec): 96.22 - samples/sec: 56.12 - lr: 0.000030
+2024-04-27 13:04:40,212 epoch 2 - iter 750/753 - loss 0.61795931 - time (sec): 106.66 - samples/sec: 56.25 - lr: 0.000030
+2024-04-27 13:04:40,598 ----------------------------------------------------------------------------------------------------
+2024-04-27 13:04:40,598 EPOCH 2 done: loss 0.6178 - lr 0.000030
+2024-04-27 13:05:26,618 Evaluating as a multi-label problem: False
+2024-04-27 13:05:26,642 TRAIN : loss 0.5896457433700562 - f1-score (micro avg)  0.7026
+2024-04-27 13:05:40,464 Evaluating as a multi-label problem: False
+2024-04-27 13:05:40,471 DEV : loss 0.5983133316040039 - f1-score (micro avg)  0.6981
+2024-04-27 13:06:35,388 Evaluating as a multi-label problem: False
+2024-04-27 13:06:35,414 TEST : loss 0.8173462748527527 - f1-score (micro avg)  0.522
+2024-04-27 13:06:45,502 BAD EPOCHS (no improvement): 0
+2024-04-27 13:06:56,822 saving best model
+2024-04-27 13:07:07,580 ----------------------------------------------------------------------------------------------------
+2024-04-27 13:07:18,179 epoch 3 - iter 75/753 - loss 0.58683825 - time (sec): 10.60 - samples/sec: 56.61 - lr: 0.000030
+2024-04-27 13:07:28,167 epoch 3 - iter 150/753 - loss 0.59369993 - time (sec): 20.59 - samples/sec: 58.29 - lr: 0.000030
+2024-04-27 13:07:40,108 epoch 3 - iter 225/753 - loss 0.59376037 - time (sec): 32.53 - samples/sec: 55.34 - lr: 0.000030
+2024-04-27 13:07:50,273 epoch 3 - iter 300/753 - loss 0.59390910 - time (sec): 42.69 - samples/sec: 56.22 - lr: 0.000030
+2024-04-27 13:08:01,057 epoch 3 - iter 375/753 - loss 0.59182234 - time (sec): 53.48 - samples/sec: 56.10 - lr: 0.000030
+2024-04-27 13:08:11,883 epoch 3 - iter 450/753 - loss 0.59707156 - time (sec): 64.30 - samples/sec: 55.99 - lr: 0.000030
+2024-04-27 13:08:22,470 epoch 3 - iter 525/753 - loss 0.58877632 - time (sec): 74.89 - samples/sec: 56.08 - lr: 0.000030
+2024-04-27 13:08:33,013 epoch 3 - iter 600/753 - loss 0.58612747 - time (sec): 85.43 - samples/sec: 56.19 - lr: 0.000030
+2024-04-27 13:08:43,690 epoch 3 - iter 675/753 - loss 0.58408784 - time (sec): 96.11 - samples/sec: 56.19 - lr: 0.000030
+2024-04-27 13:08:54,303 epoch 3 - iter 750/753 - loss 0.58382847 - time (sec): 106.72 - samples/sec: 56.22 - lr: 0.000030
+2024-04-27 13:08:54,748 ----------------------------------------------------------------------------------------------------
+2024-04-27 13:08:54,749 EPOCH 3 done: loss 0.5840 - lr 0.000030
+2024-04-27 13:09:40,793 Evaluating as a multi-label problem: False
+2024-04-27 13:09:40,817 TRAIN : loss 0.5500433444976807 - f1-score (micro avg)  0.7195
+2024-04-27 13:09:54,581 Evaluating as a multi-label problem: False
+2024-04-27 13:09:54,587 DEV : loss 0.5589345693588257 - f1-score (micro avg)  0.725
+2024-04-27 13:10:48,326 Evaluating as a multi-label problem: False
+2024-04-27 13:10:48,352 TEST : loss 0.8525061011314392 - f1-score (micro avg)  0.514
+2024-04-27 13:10:58,418 BAD EPOCHS (no improvement): 0
+2024-04-27 13:11:09,460 saving best model
+2024-04-27 13:11:30,643 ----------------------------------------------------------------------------------------------------
+2024-04-27 13:12:28,186 Evaluating as a multi-label problem: False
+2024-04-27 13:12:28,213 0.514	0.514	0.514	0.514
+2024-04-27 13:12:28,213 
+Results:
+- F-score (micro) 0.514
+- F-score (macro) 0.5017
+- Accuracy 0.514
+
+By class:
+              precision    recall  f1-score   support
+
+    predator     0.5456    0.6187    0.5798      3627
+non-predator     0.4635    0.3900    0.4236      3064
+
+    accuracy                         0.5140      6691
+   macro avg     0.5046    0.5044    0.5017      6691
+weighted avg     0.5080    0.5140    0.5083      6691
+
+2024-04-27 13:12:28,213 ----------------------------------------------------------------------------------------------------
+2024-04-27 13:12:39,794 Loss and F1 plots are saved in resources/2024-04-27_12-54-55__bert_classifier_on_PAN12_with_seq-len-512/non_quantized/training.png
+2024-04-27 13:12:40,027 Weights plots are saved in resources/2024-04-27_12-54-55__bert_classifier_on_PAN12_with_seq-len-512/non_quantized/weights.png
+2024-04-27 13:12:48,284 Reading data from datasets/PAN12
+2024-04-27 13:12:48,284 Train: datasets/PAN12/balanced_training_data.csv
+2024-04-27 13:12:48,284 Dev: None
+2024-04-27 13:12:48,284 Test: datasets/PAN12/testing_data.csv
+2024-04-27 13:12:49,822 Filtering empty sentences
+2024-04-27 13:13:00,350 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:13:08,490 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:13:18,621 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:13:26,733 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:13:28,996 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:13:40,765 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:13:42,090 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:13:46,761 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:13:47,027 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:13:48,535 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:13:50,640 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:13:53,346 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:14:03,828 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:14:07,970 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:14:10,730 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:14:13,974 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:14:17,677 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:14:18,137 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:14:19,401 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:14:24,868 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:14:26,361 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:14:33,717 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:14:36,145 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:14:42,804 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:14:43,221 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:14:55,085 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:15:00,485 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:15:03,242 Warning: An empty Sentence was created! Are there empty strings in your dataset?
+2024-04-27 13:15:36,359 Corpus: 60222 train + 6693 dev + 66913 test sentences
+Corpus Statistics: {
+    "TRAIN": {
+        "dataset": "TRAIN",
+        "total_number_of_documents": 6022,
+        "number_of_documents_per_class": {
+            "non-predator": 2608,
+            "predator": 3414
+        },
+        "number_of_tokens_per_tag": {},
+        "number_of_tokens": {
+            "total": 654734,
+            "min": 1,
+            "max": 6668,
+            "avg": 108.72367984058452
+        }
+    },
+    "TEST": {
+        "dataset": "TEST",
+        "total_number_of_documents": 6691,
+        "number_of_documents_per_class": {
+            "non-predator": 2924,
+            "predator": 3767
+        },
+        "number_of_tokens_per_tag": {},
+        "number_of_tokens": {
+            "total": 692765,
+            "min": 1,
+            "max": 3320,
+            "avg": 103.536840532058
+        }
+    },
+    "DEV": {
+        "dataset": "DEV",
+        "total_number_of_documents": 669,
+        "number_of_documents_per_class": {
+            "predator": 387,
+            "non-predator": 282
+        },
+        "number_of_tokens_per_tag": {},
+        "number_of_tokens": {
+            "total": 60510,
+            "min": 1,
+            "max": 3117,
+            "avg": 90.44843049327355
+        }
+    }
+}

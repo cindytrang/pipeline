@@ -1,0 +1,7 @@
+name: my_env
+channels:
+  - defaults
+dependencies:
+  - numpy=1.19.5
+  - python=3.9.15
+  - tensorflow=2.6.0

@@ -1,0 +1,3 @@
+#!/dcs/large/u2163087/pipeline/env/bin/python
+from numba.pycc import main
+main()
