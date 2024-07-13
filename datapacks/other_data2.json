@@ -1,0 +1,1712 @@
+{
+	"datapackID": "Predatory",
+	"description": "These are predator chats",
+	"generatedAtTime": 1596026756893,
+	    "chats": {
+        "5fd32399bbb0b3398f6d3aa619f53e33": {
+            "hasErrors": false,
+            "className": "predator",
+            "authorOnRightSide": "b7ef10a3deaa560a5d5dcad89a941e41",
+            "isLabelled": false,
+            "numOfNonemptyMessages": 62,
+            "numOfPredatorMessages": 33,
+            "numOfNonPredatorMessages": 29,
+            "authors": [
+                "b7ef10a3deaa560a5d5dcad89a941e41",
+                "c92808e9cfb0834a62a670e613637377"
+            ],
+            "content": [
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "hi",
+                    "time": 60180000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 1,
+                    "prediction": 0.5517344176769257
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "hi",
+                    "time": 60180000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 2,
+                    "prediction": 0.5482918918132782
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "how r ya?",
+                    "time": 60180000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 3,
+                    "prediction": 0.5050095915794373
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "fine",
+                    "time": 60180000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 4,
+                    "prediction": 0.5308637022972107
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "how r u",
+                    "time": 60180000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 5,
+                    "prediction": 0.5245768129825592
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "ok",
+                    "time": 60240000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 6,
+                    "prediction": 0.5320693254470825
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "just typical sunday now with lions losing",
+                    "time": 60240000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 7,
+                    "prediction": 0.5637878179550171
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "aww sorry",
+                    "time": 60240000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 8,
+                    "prediction": 0.5629291534423828
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "i'll be ok",
+                    "time": 60240000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 9,
+                    "prediction": 0.5813449621200562
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "had a couple beers and was buzzing for a little bit",
+                    "time": 60300000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 10,
+                    "prediction": 0.6221076846122742
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "@-)",
+                    "time": 60300000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 11,
+                    "prediction": 0.5835002660751343
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "lol",
+                    "time": 60300000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 12,
+                    "prediction": 0.5801565647125244
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "u at home??",
+                    "time": 60300000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 13,
+                    "prediction": 0.6028597950935364
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "yes",
+                    "time": 60300000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 14,
+                    "prediction": 0.6001971960067749
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "u have a party",
+                    "time": 60360000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 15,
+                    "prediction": 0.6056222915649414
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "yup",
+                    "time": 60360000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 16,
+                    "prediction": 0.6138063669204712
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "with me myself and i",
+                    "time": 60360000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 17,
+                    "prediction": 0.6152343153953552
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "nobody home with u??",
+                    "time": 60360000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 18,
+                    "prediction": 0.6164135336875916
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "parents",
+                    "time": 60360000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 19,
+                    "prediction": 0.5925890803337097
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "oh",
+                    "time": 60360000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 20,
+                    "prediction": 0.611322283744812
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "why?",
+                    "time": 60480000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 21,
+                    "prediction": 0.6084913611412048
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "did u want to party with me?",
+                    "time": 60480000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 22,
+                    "prediction": 0.5999369621276855
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "i was just askin idk why lol but ya that would be fun lol",
+                    "time": 60540000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 23,
+                    "prediction": 0.6046695113182068
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "Rock On!!",
+                    "time": 60540000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 24,
+                    "prediction": 0.5861372947692871
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "lol",
+                    "time": 60600000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 25,
+                    "prediction": 0.5825660824775696
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "having a good day?",
+                    "time": 60660000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 26,
+                    "prediction": 0.602846086025238
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "not really but better now that ur here to chat with",
+                    "time": 60660000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 27,
+                    "prediction": 0.6057481169700623
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "uh oh",
+                    "time": 60660000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 28,
+                    "prediction": 0.6211885809898376
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "big pressure now:-SS",
+                    "time": 60720000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 29,
+                    "prediction": 0.6067637801170349
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "eh dont worry about it",
+                    "time": 60720000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 30,
+                    "prediction": 0.6121682524681091
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "my weeks is wide open now",
+                    "time": 60780000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 31,
+                    "prediction": 0.5994927883148193
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "don't work till friday",
+                    "time": 60780000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 32,
+                    "prediction": 0.6130326986312866
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "how come",
+                    "time": 60780000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 33,
+                    "prediction": 0.6135875582695007
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "how i was scheduled",
+                    "time": 60780000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 34,
+                    "prediction": 0.6157720685005188
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "cool",
+                    "time": 60780000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 35,
+                    "prediction": 0.6276702880859375
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "i wonder how long it'll keep raining?",
+                    "time": 60840000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 36,
+                    "prediction": 0.6277908086776733
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "no idea",
+                    "time": 60840000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 37,
+                    "prediction": 0.6287612318992615
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "my moms callin me",
+                    "time": 60900000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 38,
+                    "prediction": 0.6276856064796448
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "brb",
+                    "time": 60900000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 39,
+                    "prediction": 0.6185753345489502
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "k",
+                    "time": 60900000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 40,
+                    "prediction": 0.6154609322547913
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "back",
+                    "time": 62280000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 41,
+                    "prediction": 0.6131744384765625
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "front",
+                    "time": 62280000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 42,
+                    "prediction": 0.6155796647071838
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "side",
+                    "time": 62280000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 43,
+                    "prediction": 0.620359480381012
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "umm",
+                    "time": 62340000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 44,
+                    "prediction": 0.6231225728988647
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "undercarriage?",
+                    "time": 62340000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 45,
+                    "prediction": 0.6159840822219849
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "overcarriage??",
+                    "time": 62340000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 46,
+                    "prediction": 0.6117737889289856
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "wtf?",
+                    "time": 62340000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 47,
+                    "prediction": 0.6137168407440186
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "lol idk",
+                    "time": 62340000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 48,
+                    "prediction": 0.6111167073249817
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "u is wild",
+                    "time": 62340000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 49,
+                    "prediction": 0.6096668243408203
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "thx",
+                    "time": 62340000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 50,
+                    "prediction": 0.6093806624412537
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "u get in trouble?",
+                    "time": 62400000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 51,
+                    "prediction": 0.6117616295814514
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "no??",
+                    "time": 62400000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 52,
+                    "prediction": 0.6100411415100098
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "k",
+                    "time": 62580000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 53,
+                    "prediction": 0.6037647724151611
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "so what's u doing?",
+                    "time": 62700000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 54,
+                    "prediction": 0.6041845083236694
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "reading about elektra",
+                    "time": 62760000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 55,
+                    "prediction": 0.6019752621650696
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "what r u doing",
+                    "time": 62760000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 56,
+                    "prediction": 0.5994374752044678
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "elektra?",
+                    "time": 62760000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 57,
+                    "prediction": 0.6007586121559143
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "yes",
+                    "time": 62760000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 58,
+                    "prediction": 0.6030736565589905
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "carman elektra?",
+                    "time": 62820000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 59,
+                    "prediction": 0.6001397967338562
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "nooooo",
+                    "time": 62820000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 60,
+                    "prediction": 0.6016125082969666
+                },
+                {
+                    "type": "message",
+                    "author": "b7ef10a3deaa560a5d5dcad89a941e41",
+                    "body": "the comic book elektra",
+                    "time": 62820000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 61,
+                    "prediction": 0.5924198627471924
+                },
+                {
+                    "type": "message",
+                    "author": "c92808e9cfb0834a62a670e613637377",
+                    "body": "oh ok",
+                    "time": 62820000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 62,
+                    "prediction": 0.5975858569145203
+                }
+            ]
+        },
+        "ebff860be53128280a73f171e184126f": {
+            "hasErrors": false,
+            "className": "predator",
+            "authorOnRightSide": "8956fe7bf020de2f0e9593443b3d9d1e",
+            "isLabelled": false,
+            "numOfNonemptyMessages": 62,
+            "numOfPredatorMessages": 31,
+            "numOfNonPredatorMessages": 31,
+            "authors": [
+                "8956fe7bf020de2f0e9593443b3d9d1e",
+                "941dd80263686adb071df2172badd426"
+            ],
+            "content": [
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "hey",
+                    "time": 85560000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 1,
+                    "prediction": 0.5195130705833435
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "r u there",
+                    "time": 85560000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 2,
+                    "prediction": 0.4429095983505249
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "r u mad at me",
+                    "time": 85860000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 3,
+                    "prediction": 0.42341500520706177
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "hey",
+                    "time": 85860000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 4,
+                    "prediction": 0.42157095670700073
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "hi",
+                    "time": 85860000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 5,
+                    "prediction": 0.41190284490585327
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "why would i be mad",
+                    "time": 85860000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 6,
+                    "prediction": 0.4928011894226074
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "becos lol",
+                    "time": 85860000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 7,
+                    "prediction": 0.47375112771987915
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "thought u were mad T ME",
+                    "time": 85920000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 8,
+                    "prediction": 0.5070149600505829
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "at me",
+                    "time": 85920000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 9,
+                    "prediction": 0.5033417344093323
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "lol sorry",
+                    "time": 85920000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 10,
+                    "prediction": 0.49773716926574707
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "he got mad at me and i got in troubel",
+                    "time": 85980000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 11,
+                    "prediction": 0.47822660207748413
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "what u been doing",
+                    "time": 86040000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 12,
+                    "prediction": 0.47936567664146423
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "nothing what about u",
+                    "time": 86040000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 13,
+                    "prediction": 0.5308931469917297
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "not much",
+                    "time": 86040000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 14,
+                    "prediction": 0.5361672639846802
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "why did he get mad at u",
+                    "time": 86040000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 15,
+                    "prediction": 0.5451259613037109
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "becos hes a dick",
+                    "time": 86040000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 16,
+                    "prediction": 0.5460429787635803
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "lol",
+                    "time": 86100000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 17,
+                    "prediction": 0.5432053208351135
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "ur always getting in trouble",
+                    "time": 86100000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 18,
+                    "prediction": 0.559099018573761
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "what did u do",
+                    "time": 86100000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 19,
+                    "prediction": 0.5519616603851318
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "notrhing",
+                    "time": 86160000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 20,
+                    "prediction": 0.5622106790542603
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "lol",
+                    "time": 86160000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 21,
+                    "prediction": 0.5514919757843018
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "that bad hugh",
+                    "time": 86160000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 22,
+                    "prediction": 0.5296859741210938
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "ur up late",
+                    "time": 86220000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 23,
+                    "prediction": 0.5462636351585388
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "he went to bed and i got online what r u doing",
+                    "time": 86220000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 24,
+                    "prediction": 0.548306941986084
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "getting ready to hit the sac",
+                    "time": 86280000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 25,
+                    "prediction": 0.568902850151062
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "i just walked by the computer when i seen u was on",
+                    "time": 86340000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 26,
+                    "prediction": 0.5575966835021973
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "cool",
+                    "time": 86340000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 27,
+                    "prediction": 0.5648737549781799
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "does he no ur on",
+                    "time": 86340000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 28,
+                    "prediction": 0.5510709285736084
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "i dont think so lol he went to bed early",
+                    "time": 86340000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 29,
+                    "prediction": 0.5753889679908752
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "i guess i need to get in bed",
+                    "time": 0.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 30,
+                    "prediction": 0.578461766242981
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "okay",
+                    "time": 0.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 31,
+                    "prediction": 0.595708429813385
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "if u dont want to chat",
+                    "time": 60000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 32,
+                    "prediction": 0.5965202450752258
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "i do but i got to get up early",
+                    "time": 60000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 33,
+                    "prediction": 0.6147728562355042
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "u got to go to work",
+                    "time": 60000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 34,
+                    "prediction": 0.6213939785957336
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "yes i got to get up at 5",
+                    "time": 120000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 35,
+                    "prediction": 0.6294237375259399
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "okay u want to chat tomorow",
+                    "time": 120000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 36,
+                    "prediction": 0.6202272176742554
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "sure",
+                    "time": 180000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 37,
+                    "prediction": 0.6240670084953308
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "it will be later probably",
+                    "time": 180000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 38,
+                    "prediction": 0.6337379217147827
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "okay do u still want to come over friday",
+                    "time": 180000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 39,
+                    "prediction": 0.6380508542060852
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "do u want me too",
+                    "time": 240000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 40,
+                    "prediction": 0.6323773264884949
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "yeah if u want to",
+                    "time": 240000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 41,
+                    "prediction": 0.631802499294281
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "do u",
+                    "time": 300000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 42,
+                    "prediction": 0.6321218013763428
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "ok ill see if i can get off",
+                    "time": 300000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 43,
+                    "prediction": 0.6343111991882324
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "yay",
+                    "time": 300000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 44,
+                    "prediction": 0.6488950252532959
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "for real",
+                    "time": 300000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 45,
+                    "prediction": 0.6389456391334534
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "ill holler at u tomorrow",
+                    "time": 300000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 46,
+                    "prediction": 0.6475071310997009
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "yea",
+                    "time": 360000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 47,
+                    "prediction": 0.65411376953125
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "okay",
+                    "time": 360000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 48,
+                    "prediction": 0.6627519726753235
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "nitte",
+                    "time": 360000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 49,
+                    "prediction": 0.6598430275917053
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "bye",
+                    "time": 360000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 50,
+                    "prediction": 0.6608754992485046
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "nite",
+                    "time": 360000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 51,
+                    "prediction": 0.6609368324279785
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "ur not playing me r u",
+                    "time": 360000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 52,
+                    "prediction": 0.639422595500946
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "no",
+                    "time": 420000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 53,
+                    "prediction": 0.6447703242301941
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "what do u mean playing",
+                    "time": 420000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 54,
+                    "prediction": 0.6336804032325745
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "like ur just saying it becos",
+                    "time": 480000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 55,
+                    "prediction": 0.626446545124054
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "no i promise",
+                    "time": 480000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 56,
+                    "prediction": 0.6310327053070068
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "ill try",
+                    "time": 480000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 57,
+                    "prediction": 0.6301725506782532
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "really",
+                    "time": 480000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 58,
+                    "prediction": 0.6298521757125854
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "yes",
+                    "time": 540000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 59,
+                    "prediction": 0.6318590044975281
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "nite",
+                    "time": 540000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 60,
+                    "prediction": 0.6279613375663757
+                },
+                {
+                    "type": "message",
+                    "author": "8956fe7bf020de2f0e9593443b3d9d1e",
+                    "body": "nite cyas tomorow",
+                    "time": 600000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 61,
+                    "prediction": 0.6233440041542053
+                },
+                {
+                    "type": "message",
+                    "author": "941dd80263686adb071df2172badd426",
+                    "body": "k",
+                    "time": 600000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 62,
+                    "prediction": 0.6212248206138611
+                }
+            ]
+        },
+        "3763edf61689c00884dba353dba5352e": {
+            "hasErrors": false,
+            "className": "predator",
+            "authorOnRightSide": "e03aa9707bd13f180c517ae1a47e9da2",
+            "isLabelled": false,
+            "numOfNonemptyMessages": 42,
+            "numOfPredatorMessages": 21,
+            "numOfNonPredatorMessages": 21,
+            "authors": [
+                "e03aa9707bd13f180c517ae1a47e9da2",
+                "a8e6e3985a82dfde8ee95b5f099ec606"
+            ],
+            "content": [
+                {
+                    "type": "message",
+                    "author": "a8e6e3985a82dfde8ee95b5f099ec606",
+                    "body": "hey wut sup",
+                    "time": 75900000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 1,
+                    "prediction": 0.5128729343414307
+                },
+                {
+                    "type": "message",
+                    "author": "e03aa9707bd13f180c517ae1a47e9da2",
+                    "body": "hey justin",
+                    "time": 75900000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 2,
+                    "prediction": 0.5225994288921356
+                },
+                {
+                    "type": "message",
+                    "author": "e03aa9707bd13f180c517ae1a47e9da2",
+                    "body": "wats up",
+                    "time": 75900000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 3,
+                    "prediction": 0.4565110206604004
+                },
+                {
+                    "type": "message",
+                    "author": "a8e6e3985a82dfde8ee95b5f099ec606",
+                    "body": "nothin bored how bout u",
+                    "time": 75900000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 4,
+                    "prediction": 0.45812761783599854
+                },
+                {
+                    "type": "message",
+                    "author": "e03aa9707bd13f180c517ae1a47e9da2",
+                    "body": "yea me to",
+                    "time": 75900000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 5,
+                    "prediction": 0.4978855848312378
+                },
+                {
+                    "type": "message",
+                    "author": "a8e6e3985a82dfde8ee95b5f099ec606",
+                    "body": "wut u rather b doing",
+                    "time": 75960000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 6,
+                    "prediction": 0.4479488730430603
+                },
+                {
+                    "type": "message",
+                    "author": "e03aa9707bd13f180c517ae1a47e9da2",
+                    "body": "chattin wit u",
+                    "time": 75960000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 7,
+                    "prediction": 0.45635396242141724
+                },
+                {
+                    "type": "message",
+                    "author": "a8e6e3985a82dfde8ee95b5f099ec606",
+                    "body": "yah",
+                    "time": 75960000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 8,
+                    "prediction": 0.47060590982437134
+                },
+                {
+                    "type": "message",
+                    "author": "e03aa9707bd13f180c517ae1a47e9da2",
+                    "body": "did u have a good day?",
+                    "time": 76140000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 9,
+                    "prediction": 0.4771239459514618
+                },
+                {
+                    "type": "message",
+                    "author": "a8e6e3985a82dfde8ee95b5f099ec606",
+                    "body": "yah my day was good",
+                    "time": 76200000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 10,
+                    "prediction": 0.4908415675163269
+                },
+                {
+                    "type": "message",
+                    "author": "a8e6e3985a82dfde8ee95b5f099ec606",
+                    "body": "nice day out today",
+                    "time": 76200000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 11,
+                    "prediction": 0.5212598443031311
+                },
+                {
+                    "type": "message",
+                    "author": "e03aa9707bd13f180c517ae1a47e9da2",
+                    "body": "yea",
+                    "time": 76200000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 12,
+                    "prediction": 0.514625072479248
+                },
+                {
+                    "type": "message",
+                    "author": "e03aa9707bd13f180c517ae1a47e9da2",
+                    "body": "its so awsome its gettin nice out",
+                    "time": 76260000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 13,
+                    "prediction": 0.533333420753479
+                },
+                {
+                    "type": "message",
+                    "author": "a8e6e3985a82dfde8ee95b5f099ec606",
+                    "body": "xactly",
+                    "time": 76260000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 14,
+                    "prediction": 0.49951738119125366
+                },
+                {
+                    "type": "message",
+                    "author": "a8e6e3985a82dfde8ee95b5f099ec606",
+                    "body": "i was out all day",
+                    "time": 76260000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 15,
+                    "prediction": 0.5089392066001892
+                },
+                {
+                    "type": "message",
+                    "author": "e03aa9707bd13f180c517ae1a47e9da2",
+                    "body": "wow nice",
+                    "time": 76260000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 16,
+                    "prediction": 0.5265627503395081
+                },
+                {
+                    "type": "message",
+                    "author": "e03aa9707bd13f180c517ae1a47e9da2",
+                    "body": "missed u",
+                    "time": 76380000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 17,
+                    "prediction": 0.5204753875732422
+                },
+                {
+                    "type": "message",
+                    "author": "a8e6e3985a82dfde8ee95b5f099ec606",
+                    "body": "same here hun",
+                    "time": 76380000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 18,
+                    "prediction": 0.515514075756073
+                },
+                {
+                    "type": "message",
+                    "author": "e03aa9707bd13f180c517ae1a47e9da2",
+                    "body": "u in chat?",
+                    "time": 76560000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 19,
+                    "prediction": 0.5236801505088806
+                },
+                {
+                    "type": "message",
+                    "author": "a8e6e3985a82dfde8ee95b5f099ec606",
+                    "body": "im with u",
+                    "time": 76620000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 20,
+                    "prediction": 0.5252872109413147
+                },
+                {
+                    "type": "message",
+                    "author": "e03aa9707bd13f180c517ae1a47e9da2",
+                    "body": "k",
+                    "time": 76620000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 21,
+                    "prediction": 0.5113097429275513
+                },
+                {
+                    "type": "message",
+                    "author": "e03aa9707bd13f180c517ae1a47e9da2",
+                    "body": "so wat did u do outside all day?",
+                    "time": 76620000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 22,
+                    "prediction": 0.5215253233909607
+                },
+                {
+                    "type": "message",
+                    "author": "a8e6e3985a82dfde8ee95b5f099ec606",
+                    "body": "work",
+                    "time": 76740000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 23,
+                    "prediction": 0.5161034464836121
+                },
+                {
+                    "type": "message",
+                    "author": "e03aa9707bd13f180c517ae1a47e9da2",
+                    "body": "wow",
+                    "time": 76740000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 24,
+                    "prediction": 0.526038408279419
+                },
+                {
+                    "type": "message",
+                    "author": "e03aa9707bd13f180c517ae1a47e9da2",
+                    "body": "its cool u can work outside",
+                    "time": 76740000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 25,
+                    "prediction": 0.5738388895988464
+                },
+                {
+                    "type": "message",
+                    "author": "a8e6e3985a82dfde8ee95b5f099ec606",
+                    "body": "true",
+                    "time": 76740000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 26,
+                    "prediction": 0.5800341963768005
+                },
+                {
+                    "type": "message",
+                    "author": "a8e6e3985a82dfde8ee95b5f099ec606",
+                    "body": "i wanna work inside with u",
+                    "time": 76800000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 27,
+                    "prediction": 0.5943122506141663
+                },
+                {
+                    "type": "message",
+                    "author": "e03aa9707bd13f180c517ae1a47e9da2",
+                    "body": ":)",
+                    "time": 76800000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 28,
+                    "prediction": 0.569848895072937
+                },
+                {
+                    "type": "message",
+                    "author": "a8e6e3985a82dfde8ee95b5f099ec606",
+                    "body": "u know how right",
+                    "time": 76860000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 29,
+                    "prediction": 0.5862770676612854
+                },
+                {
+                    "type": "message",
+                    "author": "e03aa9707bd13f180c517ae1a47e9da2",
+                    "body": "think i know :)",
+                    "time": 77040000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 30,
+                    "prediction": 0.5858679413795471
+                },
+                {
+                    "type": "message",
+                    "author": "a8e6e3985a82dfde8ee95b5f099ec606",
+                    "body": "u know",
+                    "time": 77100000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 31,
+                    "prediction": 0.5902887582778931
+                },
+                {
+                    "type": "message",
+                    "author": "e03aa9707bd13f180c517ae1a47e9da2",
+                    "body": "so wats goin on?",
+                    "time": 77760000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 32,
+                    "prediction": 0.6012610793113708
+                },
+                {
+                    "type": "message",
+                    "author": "a8e6e3985a82dfde8ee95b5f099ec606",
+                    "body": "nothin u",
+                    "time": 77760000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 33,
+                    "prediction": 0.5925620198249817
+                },
+                {
+                    "type": "message",
+                    "author": "e03aa9707bd13f180c517ae1a47e9da2",
+                    "body": "waitin for u to not b busy",
+                    "time": 77820000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 34,
+                    "prediction": 0.5897526144981384
+                },
+                {
+                    "type": "message",
+                    "author": "a8e6e3985a82dfde8ee95b5f099ec606",
+                    "body": ";p;",
+                    "time": 77880000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 35,
+                    "prediction": 0.6115109324455261
+                },
+                {
+                    "type": "message",
+                    "author": "a8e6e3985a82dfde8ee95b5f099ec606",
+                    "body": "lool",
+                    "time": 77880000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 36,
+                    "prediction": 0.5975433588027954
+                },
+                {
+                    "type": "message",
+                    "author": "a8e6e3985a82dfde8ee95b5f099ec606",
+                    "body": "wut you wanna chat bout",
+                    "time": 77880000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 37,
+                    "prediction": 0.605011522769928
+                },
+                {
+                    "type": "message",
+                    "author": "e03aa9707bd13f180c517ae1a47e9da2",
+                    "body": "u or watever u wanna",
+                    "time": 77880000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 38,
+                    "prediction": 0.6015433073043823
+                },
+                {
+                    "type": "message",
+                    "author": "a8e6e3985a82dfde8ee95b5f099ec606",
+                    "body": "u start",
+                    "time": 77940000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 39,
+                    "prediction": 0.5914037227630615
+                },
+                {
+                    "type": "message",
+                    "author": "e03aa9707bd13f180c517ae1a47e9da2",
+                    "body": "hmmm wat do u like to eat?",
+                    "time": 77940000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 40,
+                    "prediction": 0.6208394765853882
+                },
+                {
+                    "type": "message",
+                    "author": "a8e6e3985a82dfde8ee95b5f099ec606",
+                    "body": "italian food",
+                    "time": 77940000.0,
+                    "isFromPredator": true,
+                    "labels": [],
+                    "lineNum": 41,
+                    "prediction": 0.6253398060798645
+                },
+                {
+                    "type": "message",
+                    "author": "e03aa9707bd13f180c517ae1a47e9da2",
+                    "body": "thats cool i can make that",
+                    "time": 78000000.0,
+                    "isFromPredator": false,
+                    "labels": [],
+                    "lineNum": 42,
+                    "prediction": 0.6242299675941467
+                }
+            ]
+        }
+	}
+}

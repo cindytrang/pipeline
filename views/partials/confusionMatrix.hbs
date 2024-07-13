@@ -1,0 +1,34 @@
+<table class="confusionMatrix">
+	<tr>
+    	<td></td>
+    	<td></td>
+    	<th scope="col" colspan="3" class="prediction">Prediction</th>
+	</tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+		{{#each classNames as |predicted|}}
+        <th scope="col" class="className"><tt>{{predicted}}</tt></th>
+        {{/each}}
+    </tr>
+    {{!-- iterate over real and predicted class names --}}
+	{{#each classNames as |real|}}
+    <tr>
+		{{#if @first}}
+    	<th scope="col" rowspan="3" class="reality">Reality</th>
+		{{/if}}
+
+		{{#each @root.classNames as |predicted|}}
+			{{#if @first}}
+	      		<th scope="row" class="className"><tt>{{real}}</tt></th>
+      		{{/if}}
+  			{{!-- {{real}}, {{predicted}} --}}
+	        <td>{{getConfusionMatrixEntry @root.confusionMatrix real predicted}}</td>
+
+    	{{/each}}
+    </tr>
+    {{/each}}
+
+    <caption class="hidden">Confusion Matrix</caption>
+</table>

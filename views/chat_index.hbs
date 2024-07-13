@@ -1,0 +1,93 @@
+<h1>Visualizations for {{datapackID}}</h1>
+<h5 class="left-align"><a class="bi bi-arrow-return-left" href="../../"> Go back</a></h5>
+
+<div class="meta">
+	{{#if description}}
+	<p>{{{description}}}</p>
+	{{/if}}
+	<div class="jutify-content">
+	<p>If a chat is highlighted red, its class was predicted wrongly</p>
+
+	<table class="keyval">
+		<tr>
+			<td>Number of chats</td>
+			<td>{{size chats}}</td>
+		</tr>
+		{{#if generatedAtTime}}
+		<tr>
+			<td>Generated at</td>
+			<td>
+				<date time="{{timeUTC generatedAtTime}}">{{dateTimeHumanLocal generatedAtTime}}</date>
+			</td>
+		</tr>
+		{{/if}}
+		{{!-- <tr>
+			<td>Confusion Matrix</td>
+			<td>{{> confusionMatrix}}</td>
+		</tr> --}}
+	</table>
+	</div>
+</div>
+
+<main class="chatList">
+
+{{#each chatsByClassName as |chats className|}}
+
+<section data-class="{{className}}">
+<h2><tt>{{className}}</tt> chats</h2>
+
+<table class="booktable">
+	<tr>
+		<th>Name</th>
+		<th>Messages</th>
+		<th>Warning at msg.</th>
+		<th>Predicted as</th>
+		<th>Description</th>
+	</tr>
+
+	{{#each chats as |chat chatID|}}
+		{{#with chat}}
+		<tr class="{{#if falsePrediction}}falsePrediction{{/if}}">
+			<td><a href="chat/{{chatID}}" class="id">{{chatID}}</a></td>
+			<td>{{noOfMessages}}</td>
+			<td>{{firstWarningMsgNo}}</td>
+			<td>{{predictedClassName}}</td>
+			<td class="ellipsis">{{Description}}</td>
+		</tr>
+		{{/with}}
+	{{/each}}
+
+</table>
+{{!-- {{#unless ../showFullList}}<br>⋮{{/unless}} --}}
+
+<p>{{size chats}} chats shown</p>
+</section>
+
+{{/each}}
+
+<br>
+<br>
+{{#unless showFullList}}
+<p>
+	<a href="./?full">Show full list of chats</a>
+</p>
+{{/unless}}
+
+{{!-- 
+<section class="non-predator">
+<h2>Non-Predator Chats</h2>
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Links</th>
+		<th>Relative Earliness</th>
+		<th>Number of messages</th>
+		<th>Labelled</th>
+		<th>Classified as</th>
+	</tr>
+	%s
+</table>
+</section> --}}
+
+</main>
+

@@ -1,0 +1,18 @@
+{
+  "name": "chat-visualizer",
+  "version": "0.0.2",
+  "description": "Creates a heatmap for chat messages to visualize model predictions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devserver": "nodemon --delay 1 --max-old-space-size=4096 --inspect index.js",
+    "start": "nodemon --delay 1 --max-old-space-size=4096 index.js"
+  },
+  "author": "Matthias Vogt",
+  "license": "GPL",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "nodemon": "^2.0.4"
+  }
+}

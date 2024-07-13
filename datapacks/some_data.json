@@ -1,0 +1,351 @@
+{
+	"datapackID": "Test-datapack-1",
+	"description": "Heatmap and alerts",
+	"generatedAtTime": 1595578196893,
+	"chats": {
+		"image_score": {
+			"className": "class2",
+			"predictedClassName": "class2",
+			"description": "Source: <a href=\"https://genius.com/John-travolta-and-samuel-l-jackson-royale-with-cheese-dialogue-annotated\">genius.com</a>",
+			"content": [
+				{
+					"type": "message",
+					"author": "Jules",
+					"body": "Okay so, tell me again about the hash bars.",
+					"time": 1596025941008,
+					"prediction": 0.16
+				}, {
+					"type": "message",
+					"author": "Vincent",
+					"body": "Okay what do you want to know?",
+					"time": 1596025946008,
+					"prediction": 0.86
+				}, {
+					"type": "message",
+					"author": "Jules",
+					"body": "Well, hash is legal over there, right?",
+					"time": 1596025951008,
+					"prediction": 0.23
+				}, {
+					"type": "message",
+					"author": "Vincent",
+					"body": "Yeah, It's legal but it ain't hundred percent legal, I mean, you just can't walk into a restaurant, roll a joint and start puffin' away. They want you to smoke in your home or certain designated places.",
+					"time": 1596025956008,
+					"prediction": 0.9
+				}, {
+					"type": "message",
+					"author": "Jules",
+					"body": "And those are the hash bars?",
+					"time": 1596025961008,
+					"prediction": 0.89
+				}, {
+					"type": "message",
+					"author": "Vincent",
+					"body": "Yeah, It breaks down like this, ok, it's legal to buy it, it's legal to own it, and if you're the proprietor of a hash bar, it's legal to sell it. It's legal to carry it, but...but that dosen't matter, cause, get a load of this; all right, if you get stopped by a cop in Amsterdam, it's illegal for them to search you. I mean that's a right the cops in Amsterdam don't have.",
+					"time": 1596025966008,
+					"prediction": 0.43
+				}, {
+					"type": "message",
+					"author": "Jules",
+					"body": "Oh, man, I'm goin', that's all there is to it. I'm fuckin' goin'.",
+					"time": 1596025971008,
+					"prediction": 0.79
+				}, {
+					"type": "message",
+					"author": "Vincent",
+					"body": "I know, baby, you'd dig it the most.. But you know what the funniest thing about Europe is?",
+					"time": 1596025976008,
+					"prediction": 1
+				}, {
+					"type": "message",
+					"author": "Jules",
+					"body": "What?",
+					"time": 1596025981008,
+					"prediction": 0.96
+				}, {
+					"type": "message",
+					"author": "Vincent",
+					"body": "It's the little differences. A lotta the same shit we got here, they got there, but there they're a little different.",
+					"time": 1596025986008,
+					"prediction": 0.72
+				}, {
+					"type": "message",
+					"author": "Jules",
+					"body": "Example?",
+					"time": 1596025991008,
+					"prediction": 0.6
+				}, {
+					"type": "message",
+					"author": "Vincent",
+					"body": "Alright, when you .... into a movie theatre in Amsterdam, you can buy beer. And I don't mean in a paper cup either. They give you a glass of beer. And in Paris, you can buy beer at MacDonald's. And you know what they call a Quarter Pounder with Cheese in Paris?",
+					"time": 1596025996008,
+					"prediction": 1
+				},
+				{
+					"type": "message",
+					"author": "Jules",
+					"body": "They don't call it a Quarter Pounder with Cheese?",
+					"time": 1596026001008,
+					"prediction": 0.65
+				}, {
+					"type": "message",
+					"author": "Vincent",
+					"body": "No, they got the metric system there, they wouldn't know what the fuck a Quarter Pounder is.",
+					"time": 1596026006008,
+					"prediction": 0.14
+				}, {
+					"type": "message",
+					"author": "Jules",
+					"body": "What'd they call it?",
+					"time": 1596026011008,
+					"prediction": 0.42
+				}, {
+					"type": "message",
+					"author": "Vincent",
+					"body": "They call it Royale with Cheese.",
+					"time": 1596026016008,
+					"prediction": 0.35
+				}, {
+					"type": "message",
+					"author": "Jules",
+					"body": "Royale with Cheese. What'd they call a Big Mac?",
+					"time": 1596026021008,
+					"prediction": 1
+				}, {
+					"type": "message",
+					"author": "Vincent",
+					"body": "Big Mac's a Big Mac, but they call it Le Big Mac.",
+					"time": 1596026026008,
+					"prediction": 0.94
+				}, {
+					"type": "message",
+					"author": "Jules",
+					"body": "Le big Mac! Ahhaha, what do they call a Whopper?",
+					"time": 1596026031008,
+					"prediction": 0.72
+				}, {
+					"type": "message",
+					"author": "Vincent",
+					"body": "I dunno, I didn't go into a Burger King. But you know what they put on french fries in Holland instead of ketchup?",
+					"time": 1596026036008,
+					"prediction": 0.61
+				}, {
+					"type": "message",
+					"author": "Jules",
+					"body": "What?",
+					"time": 1596026041008,
+					"prediction": 0.51
+				}, {
+					"type": "message",
+					"author": "Vincent",
+ 					"body": "<img src=\"/images/dark_photo.jpg\">" ,
+					"time": 1596025946029,
+					"prediction": 0.86,
+					"labels": [],
+    				"HTMLclassNames": ["warning"]
+				},  {
+					"type": "message",
+					"author": "Jules",
+					"body": "Goddamn!",
+					"time": 1596026051008,
+					"prediction": 0.79
+				}, {
+					"type": "message",
+					"author": "Vincent",
+					"body": "I seen 'em do it man, they fuckin' drown 'em in it.",
+					"time": 1596026056008,
+					"prediction": 0.35
+				}, {
+					"type": "message",
+					"author": "Jules",
+					"body": "Uuccch!",
+					"time": 1596026061008,
+					"prediction": 0.15
+				}
+			]
+		},
+		"foo": {
+			"description": "A chat between Alice and Bob",
+			"className": "class1",
+			"predictedClassName": "class1",
+			"content": [{
+					"type": "message",
+					"author": "Alice",
+					"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod",
+					"time": 1596025936008,
+					"prediction": 0.5
+				},
+				{
+					"type": "message",
+					"author": "Bob",
+					"body": "tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+					"time": 1596025938080,
+					"prediction": 0.4,
+					"labels": ["bar"]
+				},
+				{
+					"type": "message",
+					"author": "Bob",
+					"body": "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+					"time": 1596025941387,
+					"prediction": 0.6,
+					"labels": ["baz", "biff"]
+				},
+				{
+					"type": "message",
+					"author": "Alice",
+					"body": "consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse",
+					"time": 1596025944274,
+					"prediction": 0
+				},
+				{
+					"type": "separator"
+				},
+				{
+					"type": "message",
+					"author": "Bob",
+					"body": "cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non",
+					"time": 1596027744608,
+					"prediction": 0.1
+				},
+				{
+					"type": "message",
+					"author": "Alice",
+					"body": "proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"time": 1596027746908,
+					"HTMLclassNames": ["warning"],
+					"prediction": 0.3
+				}
+			]
+		},
+
+		"bar": {
+			"description": "A chat between Clara and Detlef",
+			"className": "class1",
+			"predictedClassName": "class1",
+			"content": [{
+					"type": "message",
+					"author": "Clara",
+					"body": "Bavaria ipsum dolor sit amet pfiad de Kirwa glei zwoa, owe.",
+					"time": 1596026276376,
+					"prediction": 0.6809073670380679
+				},
+				{
+					"type": "message",
+					"author": "Detlef",
+					"body": "Eam Hetschapfah pfenningguat ned woar gar nia need i sog ja nix, i red ja bloß guad, hoggd?",
+					"time": 1596026337119,
+					"prediction": 0.6931168028687313
+				},
+				{
+					"type": "message",
+					"author": "Clara",
+					"body": "Gscheit an ognudelt Guglhupf ghupft wia gsprunga schüds nei etza vasteh Jodler, mechad Musi!",
+					"time": 1596026397445,
+					"prediction": 0.2763588845274445
+				},
+				{
+					"type": "message",
+					"author": "Detlef",
+					"body": "Obandeln a ganze Hoiwe liberalitas Bavariae fias Diandldrahn Broadwurschtbudn, mehra trihöleridi dijidiholleri im Beidl oamoi?",
+					"time": 1596026457630,
+					"prediction": 0.9499837183342883
+				},
+				{
+					"type": "separator"
+				},
+				{
+					"type": "message",
+					"author": "Clara",
+					"body": "Almrausch Landla Buam Biaschlegl, Weibaleid?",
+					"time": 1596029218073,
+					"prediction": 0.4757461307007407
+				},
+				{
+					"type": "message",
+					"author": "Detlef",
+					"body": "Spernzaln hob boarischer da Schuabladdla, hod!",
+					"time": 1596029279668,
+					"prediction": 0.03747838892780875
+				},
+				{
+					"type": "message",
+					"author": "Detlef",
+					"body": "Radler wiavui af nomoi du dadst ma scho daugn gor Kneedl?",
+					"time": 1596029340955,
+					"prediction": 0.436790719402641,
+					"HTMLclassNames": ["warning"]
+				},
+				{
+					"type": "message",
+					"author": "Clara",
+					"body": "Samma greaßt eich nachad des muas ma hoid kenna Stubn von oans, griaß God beinand wos hob i an Suri Servas.",
+					"time": 1596029400971,
+					"prediction": 0.276675358701441
+				},
+				{
+					"type": "separator"
+				},
+				{
+					"type": "message",
+					"author": "Detlef",
+					"body": "Trihöleridi dijidiholleri eam liberalitas Bavariae am acht’n Tag schuf Gott des Bia dahoam umananda wuid an naa Hetschapfah!",
+					"time": 1596031561851,
+					"prediction": 0.7120872285722428
+				}
+			]
+		},
+
+		"missing_messages": {
+			"description": "This tests empty and missing messages",
+			"className": "class2",
+			"predictedClassName": "class2",
+			"content": [{
+					"type": "message",
+					"author": "Ernie",
+					"time": 1596026276376,
+					"prediction": 0
+				},
+				{
+					"type": "message",
+					"author": "Bert",
+					"time": 1596026276376,
+					"prediction": 0
+				},
+				{
+					"type": "separator"
+				},
+				{
+					"type": "message",
+					"author": "Ernie",
+					"body": "",
+					"time": 1596029218073,
+					"prediction": 0.4757461307007407
+				},
+				{
+					"type": "message",
+					"author": "Ernie",
+					"body": "I exist!",
+					"time": 1596029279668,
+					"prediction": 0.03747838892780875
+				},
+				{
+					"type": "message",
+					"isMissing": true,
+					"author": "Bert",
+					"body": "Radler wiavui af nomoi du dadst ma scho daugn gor Kneedl?",
+					"time": 1596029340955,
+					"prediction": 0.436790719402641,
+					"HTMLclassNames": ["warning"]
+				},
+				{
+					"type": "message",
+					"isMissing": true
+				},
+				{
+					"type": "message"
+				}
+			]
+		}
+	}
+}
