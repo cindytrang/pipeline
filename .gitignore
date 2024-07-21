@@ -10,3 +10,8 @@ legacy/
 todo
 .fuse_hidden*
 notes
+
+# Ignore virtual environment directories
+env/
+myenv/
+laptopenv/
