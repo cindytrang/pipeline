@@ -1,7 +1,5 @@
 ## Project Overview ##
 **Title:** Child Abuse Behavior Detection on Smartphones  
-**Institution:** University of Warwick  
-**Academic Year:** 2023/2024
 
 This project aims to develop and improve methods for the early detection of potential child abuse behaviours through the analysis of smartphone communications,
 usually very short messages. To demonstrate the alarming system in action and the chat message evaluation process, please watch the demo video: 
