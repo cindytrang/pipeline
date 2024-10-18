@@ -51,6 +51,12 @@ The demonstration visualizer is not included in the repository. However, it can 
   - 6
 - **Count Limit of Warnings**
   - 3
+    
+## Screenshots ##
+
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/f9ac8b76-90fb-4e47-8d63-11655ec5d036">
+<img width="1723" alt="image" src="https://github.com/user-attachments/assets/9b4f2a19-238a-41f8-9c42-5929cdddffb8">
+
 
 ## Installation and Usage ##
 Please refer to the environment.txt (newenv) and requirement.txt(env) files for instructions on setting up the development environment. 
