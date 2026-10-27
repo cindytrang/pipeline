@@ -1,0 +1,39 @@
+{
+  "datapackID": "synthetic-demo",
+  "description": "Synthetic messages and illustrative scores; no trained model was run.",
+  "generatedAtTime": 1704067200000,
+  "chats": {
+    "example-chat": {
+      "description": "Harmless synthetic chat for interface testing. Scores are illustrative only.",
+      "className": "example",
+      "predictedClassName": "example",
+      "authorOnRightSide": "Alex",
+      "content": [
+        {
+          "type": "message",
+          "author": "Alex",
+          "body": "Shall we meet at the library to work on our project?",
+          "time": 1704067200000,
+          "prediction": 0.12,
+          "labels": [
+            "Synthetic example"
+          ]
+        },
+        {
+          "type": "message",
+          "author": "Sam",
+          "body": "Yes, I will bring my notes.",
+          "time": 1704067260000,
+          "prediction": 0.35
+        },
+        {
+          "type": "message",
+          "author": "Alex",
+          "body": "Great, see you there.",
+          "time": 1704067320000,
+          "prediction": 0.72
+        }
+      ]
+    }
+  }
+}

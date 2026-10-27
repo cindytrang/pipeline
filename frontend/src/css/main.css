@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 2em 3em;
+    background: #b8bfc2;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    font-style: inherit;
+    background-image: url('/images/background.jpg');
+    background-blend-mode: soft-light;
+}
+
+h1,
+h2 {
+    color: rgb(25, 24, 24);
+    font-weight: 600;
+    margin: 4em 0 2em;
+    text-align: center;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+/* backlink */
+
+.backlink:before {
+    content: '↖ ';
+    font-size: 1.25em;
+    padding-right: 0.1em;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.backlink {
+    color: black;
+    font-size: 0.8em;
+}
+
+/* unvisited link */
+a:link {
+    color: rgb(15, 77, 27);
+}
+
+/* visited link */
+a:visited {
+    color: rgb(22, 11, 96);
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+}
+
+/* selected link */
+a:active {
+    color: rgb(94, 94, 157);
+}
+
+.id {
+    font-family: monospace;
+}
+
+/* Tables */
+
+table {
+    border-spacing: 0;
+}
+
+.booktable {
+    text-align: left;
+    border-spacing: 0;
+}
+.booktable th {
+    border-bottom: solid 0.1em;
+}
+
+.booktable tr:nth-of-type(2) td {
+    padding-top: 0.25em;
+}
+
+.booktable th,
+.booktable td {
+    padding: 0.125em 1em;
+}
+
+.booktable th:first-of-type,
+.booktable td:first-of-type {
+    padding-left: 0.25em;
+}
+
+.booktable th:last-of-type,
+.booktable td:last-of-type {
+    padding-right: 0.25em;
+}
+
+.keyval > tbody > tr > td:first-of-type {
+    padding-right: 1em;
+    font-weight: bold;
+}
+.keyval td {
+    padding: 0.25em 0;
+}
+.keyval {
+    max-width: 30em;
+}
+
+/* Misc */
+
+.falsePrediction {
+    background: rgba(245, 56, 56, 0.2);
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 15.75em;
+}
+
+.hidden {
+    position: fixed;
+    top: -99999px;
+    left: -99999px;
+}

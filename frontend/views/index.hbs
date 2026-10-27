@@ -1,0 +1,37 @@
+<h1>Child Abuse Detection</h1>
+
+<main>
+{{#if datapacks}}
+
+<table class="booktable">
+	<tr>
+		<th>Chat ID</th>
+		<th>Chats</th>
+		<th>Description</th>
+		<th>Created at</th>
+	</tr>
+	{{#each datapacks as |datapack datapackID|}}
+	<tr>
+		<td>
+			<a href="visualizations/{{datapackID}}/">{{datapackID}}</a>
+		</td>
+		{{#with datapack}}
+		<td>{{size chats}}</td>
+		<td class="ellipsis">{{description}}</td>
+		<td>
+			{{#if generatedAtTime}}
+			<date time="{{timeUTC generatedAtTime}}">{{dateTimeHumanLocal generatedAtTime}}</date>
+			{{/if}}
+		</td>
+		{{/with}}
+	</tr>
+	{{/each}}
+</table>
+
+{{else}}
+
+<em>You haven't added any JSON files with visualization datapack yet.</em>
+
+{{/if}}
+
+</main>

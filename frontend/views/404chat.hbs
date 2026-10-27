@@ -1,0 +1,15 @@
+
+<h1>Not found</h1>
+
+<p>Could not find a visualization of <span class="id">{{chatID}}</span> in <span class="id">{{datapackID}}</span>.</p>
+
+{{#if otherDatapackIDs}}
+	<p>However, <span class="id">{{chatID}}</span> is visualized in the datapacks:</p>
+	<ul>
+		{{#each otherDatapackIDs}}
+		<li><a href="../../{{this}}/chat/{{@root.chatID}}"><tt>{{this}}</tt></a></li>
+		{{/each}}
+	</ul>
+{{/if}}
+
+<a class="backlink" href="../">Back to index</a>

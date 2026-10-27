@@ -1,17 +1,28 @@
-datasets/
-__pycache__/
-resources/
-legacy/
-*.pyc
-.swp
-*.csv
-*.tsv
-*.sublime*
-todo
-.fuse_hidden*
-notes
-
-# Ignore virtual environment directories
+# Environments, installed dependencies and caches
+node_modules/
+new_env/
+venv/
+.venv/
 env/
 myenv/
 laptopenv/
+Python-*/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+*.log
+# Secrets and machine-specific files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Models, research datasets and generated outputs stay local
+pipeline/datasets/
+pipeline/resources/
+data/
+models/
+outputs/
+frontend/datapacks/*.json
+!frontend/datapacks/synthetic-demo.json
