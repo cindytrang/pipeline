@@ -1,86 +1,113 @@
-# Dissertation: NLP pipeline and chat visualisation
+# NLP chat analysis and visualisation
 
-A unified workspace for Cindy’s dissertation research into early detection of concerning behaviour in chat communications. The project combines a Python NLP/model pipeline with an Express/Handlebars frontend that visualises annotated chat messages and their prediction scores.
+A dissertation project exploring early detection of concerning behaviour in chat communications. A Python NLP pipeline annotates messages with prediction scores and labels, and a web frontend displays them as chat heatmaps and prediction charts.
 
-## What you can run now
+## Screenshots
 
-The frontend starts with a **synthetic example** and does not need a trained model, Python ML packages, or research datasets. Its example scores are illustrative; they are not model results or evidence of harmful behaviour.
+### Chat heatmap and prediction chart
 
-With a current Node.js LTS release and npm installed:
+![Chat visualisation with message heatmap, warning indicators and prediction chart](frontend/demo.png)
+
+### Dissertation demo
+
+<img width="1728" alt="Dissertation demo interface, first screenshot" src="https://github.com/user-attachments/assets/f9ac8b76-90fb-4e47-8d63-11655ec5d036">
+
+<img width="1723" alt="Dissertation demo interface, second screenshot" src="https://github.com/user-attachments/assets/9b4f2a19-238a-41f8-9c42-5929cdddffb8">
+
+## Run the demo
+
+Requirements: **Node.js 24** and npm. Python is needed for the datapack importer and its tests, but not to start the synthetic demo.
 
 ```sh
-npm --prefix frontend ci
+git clone https://github.com/cindytrang/pipeline.git
+cd pipeline
+# If you use NVM:
+nvm install
+nvm use
+npm run setup
+npm run doctor
 npm start
 ```
 
-Open **http://127.0.0.1:3000**. To restart automatically while developing, run `npm run dev` instead. The server binds only to the local loopback address by default.
+If Node 24 is already installed, skip the two NVM commands. Open **http://127.0.0.1:3000**. The included synthetic chat has illustrative scores so you can test the interface without loading a trained model.
 
-## How the two projects connect
+For development with automatic restarts:
+
+```sh
+npm run dev
+```
+
+## Architecture
 
 ```mermaid
 flowchart LR
-    data["Local research datasets"] --> model["pipeline/: model training and evaluation"]
-    artifacts["Local trained model + run_settings.json"] --> model
-    model --> annotations["Annotated JSON datapack"]
-    annotations --> importer["scripts/import_datapack.py: validate and import"]
-    importer --> demo["frontend/: Express + Handlebars"]
-    synthetic["Bundled synthetic datapack"] --> demo
-    demo --> view["Browser: message heatmap, labels, prediction chart"]
+    datasets["Local datasets"] --> model["Python NLP pipeline"]
+    trained["Trained model and run settings"] --> model
+    model --> result["Annotated JSON datapack"]
+    result --> importer["Datapack validation and import"]
+    importer --> frontend["Express and Handlebars frontend"]
+    sample["Synthetic example"] --> frontend
+    frontend --> browser["Chat heatmap, labels and prediction chart"]
 ```
 
-This is a **file-based handoff**, not a live model API. The frontend reads already computed scores from JSON; it does not run the NLP model. Its sliding-window alerts are display logic separate from the pipeline’s classifier logic.
+The pipeline and frontend exchange JSON files. The frontend visualises scores already stored in a datapack; it does not run live model inference.
 
-## Repository layout
+## Project structure
 
 ```text
-pipeline/                  Original training, annotation and evaluation code
-  batch_scripts/           Historical university compute-job scripts
-  r_scripts/               Historical analysis scripts
-  resources/               Local model runs (not committed)
-  datasets/                Local research datasets (not committed)
-frontend/                  Express server, views, browser JS/CSS and vendor assets
-  datapacks/               Synthetic example + ignored local imports
-  legacy_pipeline/         Python files formerly duplicated in the demo repo
-scripts/import_datapack.py Data-contract validation and local import
-tests/                     Python importer checks
-docs/                      Setup notes, data contract, history and provenance
+pipeline/                  Model training, annotation and evaluation
+  batch_scripts/           Compute-job scripts
+  r_scripts/               Results analysis
+frontend/                  Web server, views, styles and browser scripts
+  datapacks/               Synthetic example and local imports
+scripts/                   Setup checks, test commands and datapack importer
+tests/                     Python datapack-import tests
+docs/                      Data format, model setup and development guides
 ```
 
-The original READMEs remain in `pipeline/README.md` and `frontend/README.md` as historical documentation. Some paths and instructions there describe the original projects. Use this root README and `docs/` for the combined structure.
+## Test the project
 
-## Bring model output into the demo
+```sh
+npm run test:all            # Frontend and Python importer tests
+npm run test:frontend       # Frontend only
+npm run test:pipeline       # Datapack importer only; no model training
+npm run audit:frontend     # npm vulnerability report
+```
 
-After separately producing an annotated datapack with the historical pipeline:
+The frontend tests check page responses, rendered predictions and labels, missing datapacks and static assets. The Python tests check datapack structure, prediction ranges and file import behaviour. Model training and model accuracy require separate evaluation with the research datasets and trained artifacts.
+
+GitHub Actions runs the frontend tests, importer tests and a high-severity frontend dependency audit on pushes and pull requests. You can also run it from **Actions → Source and demo checks → Run workflow** after this workflow update is merged.
+
+## Display your model output
 
 ```sh
 python3 scripts/import_datapack.py /absolute/path/to/annotated-output.json
 npm start
 ```
 
-Restart an already running server after importing. The importer validates the frontend’s required structure and the range of prediction scores; it does not anonymise, sanitise HTML, or establish permission to use research data. Use trusted local data only. Imported files are ignored by Git. To replace an existing local import, add `--force`.
+Restart a running server after importing. To replace an existing local import, add `--force`. See the [datapack format](docs/data-contract.md) for the message fields the frontend accepts.
 
-See [the data contract](docs/data-contract.md) and [pipeline setup notes](docs/pipeline-setup.md).
+## Model pipeline setup
 
-## Checks
+Run training and annotation scripts from inside `pipeline/`, using an isolated ML environment. You need the relevant datasets, trained models and `run_settings.json` files. See [pipeline setup](docs/pipeline-setup.md) for the existing commands and environment requirements.
 
-```sh
-npm test
-python3 -m unittest discover -s tests -v
-```
+## Configuration
 
-These check the frontend routes, static assets and datapack handoff without loading ML models. They do not validate dissertation model accuracy or reproduce training results.
+Export these variables before starting the frontend:
 
-## Development
+| Variable | Default | Purpose |
+| --- | --- | --- |
+| `HOST` | `127.0.0.1` | Server bind address |
+| `PORT` | `3000` | Server port |
+| `DATAPACK_DIR` | `frontend/datapacks/` | Existing folder of JSON datapacks |
+| `PYTHON` | `python3` | Python executable used by the npm test helper |
 
-- Frontend: `npm run dev` from this root.
-- Model pipeline: run scripts from **inside `pipeline/`** because paths to datasets and model resources are relative to that directory.
-- Configuration: export `PORT` (default 3000), `HOST` (default 127.0.0.1), or `DATAPACK_DIR` (an existing folder of JSON datapacks) before starting Node. `frontend/.env.example` documents these names; `.env` files are not automatically loaded.
-- Keep model weights, private datasets, virtual environments, generated outputs and credentials outside Git.
+`frontend/.env.example` lists the server settings; `.env` files are not automatically loaded.
 
-## Research status and attribution
+## Development and improvements
 
-This is a research prototype, not a validated safeguarding or diagnostic product. Synthetic demo scores do not indicate real risk. Training requires external model artifacts and datasets that are not included in this source tree.
+Use the [improvement backlog](docs/improvements.md) and the repository's **Issues** tab to choose work. See [the testing guide](docs/testing.md) for a repeatable development loop and [dependency health](docs/dependency-health.md) for current audit findings. Weekly Dependabot proposals cover the frontend and GitHub Actions. The model environment needs a supported dependency baseline before automated Python upgrades can be introduced.
 
-Both original Git histories are retained as parents of the combined project commit, with original commit IDs and author attribution unchanged. See [migration and provenance](docs/migration.md). Retaining history also retains historical files; this reorganisation is not a history purge.
+The [project wiki](https://github.com/cindytrang/pipeline/wiki) contains the NLP pipeline and frontend documentation.
 
-Original license notices remain in `pipeline/LICENSE.txt`, `pipeline/LICENSE (data).txt`, and `frontend/LICENSE`, plus bundled vendor notices. The demo’s original `package.json` declares GPL while its LICENSE file contains MIT text; that pre-existing inconsistency is recorded here rather than silently changed. See [third-party notes](docs/third-party-notices.md).
+Keep local datasets, model weights, credentials and generated outputs out of Git. Existing code and data notices are retained with their components.

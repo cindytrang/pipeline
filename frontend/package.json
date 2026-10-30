@@ -5,14 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "node --test tests/*.test.js",
-    "devserver": "nodemon --delay 1 --max-old-space-size=4096 --inspect index.js",
-    "start": "node index.js"
+    "devserver": "nodemon --delay 1 --max-old-space-size=4096 index.js",
+    "start": "node index.js",
+    "debug": "nodemon --delay 1 --max-old-space-size=4096 --inspect index.js"
   },
   "author": "Matthias Vogt",
   "license": "GPL",
   "dependencies": {
     "express": "^4.17.1",
-    "hbs": "^4.1.1",
-    "nodemon": "^2.0.4"
+    "hbs": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "engines": {
+    "node": ">=24 <25"
   }
 }
