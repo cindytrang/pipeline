@@ -1,0 +1,17 @@
+name: Improvement
+description: Propose a focused project improvement.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Problem and proposed outcome
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: What observable results or tests will show this is complete?
+    validations:
+      required: true

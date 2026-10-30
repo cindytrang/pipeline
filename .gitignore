@@ -26,3 +26,5 @@ models/
 outputs/
 frontend/datapacks/*.json
 !frontend/datapacks/synthetic-demo.json
+
+.audit-venv/

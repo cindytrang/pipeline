@@ -4,6 +4,16 @@
   "scripts": {
     "start": "npm --prefix frontend start",
     "dev": "npm --prefix frontend run devserver",
-    "test": "npm --prefix frontend test"
+    "test": "npm --prefix frontend test",
+    "setup": "npm --prefix frontend ci --ignore-scripts",
+    "doctor": "node scripts/doctor.js",
+    "test:frontend": "npm --prefix frontend test",
+    "test:pipeline": "node scripts/test-python.js",
+    "test:all": "npm run test:frontend && npm run test:pipeline",
+    "audit:frontend": "npm --prefix frontend audit",
+    "debug": "npm --prefix frontend run debug"
+  },
+  "engines": {
+    "node": ">=24 <25"
   }
 }

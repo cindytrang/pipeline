@@ -1,5 +1,15 @@
 {
   "watch": [
+    "index.js",
+    "routes.js",
+    "utils",
+    "views",
+    "src",
+    "public",
     "datapacks"
+  ],
+  "ext": "js,json,hbs,css",
+  "ignore": [
+    "node_modules/**"
   ]
 }
