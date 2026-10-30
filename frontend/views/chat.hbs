@@ -1,0 +1,158 @@
+
+
+	<h3>Visualization for {{chatID}} from {{datapackID}}</h3>
+		<h4><a class="bi bi-arrow-return-left" href="../../"> Go back</a></h4>
+
+	<aside>
+	<div class = "summary-container">
+	{{#with chat}}
+	<div>
+		{{#if description}}
+		{{!-- <p>{{{description}}}</p> --}}
+		{{/if}}
+		<table class="keyval">
+			<tr>
+				<td>Labelled</td>
+				<td>%s</td>
+			</tr>
+			<tr>
+				<td>Chat ID</td>
+				<td><span class="ID">{{@root.chatID}}</span></td>
+			</tr>
+			<tr>
+				<td>Datapack ID</td>
+				<td><span class="ID">{{@root.datapackID}}</span></td>
+			</tr>
+			{{#if className}}
+			<tr>
+				<td>Class</td>
+				<td class="{{#if falsePrediction}}falsePrediction{{/if}}">
+					{{className}}
+				</td>
+			</tr>
+			{{/if}}
+			<tr>
+				<td>Number of messages</td>
+				<td>{{noOfMessages}}</td>
+			</tr>
+			<tr>
+				<td>Number of separators</td>
+				<td>{{noOfSeparators}}</td>
+			</tr>
+			{{#if firstWarningMsgNo}}
+			<tr>
+				<td>Message number of first warning</td>
+				<td>
+					<a href="#msg{{firstWarningMsgNo}}">{{firstWarningMsgNo}}</a>
+					{{!-- (at {{firstWarningMsgPercent}}% of messages) --}}
+				</td>
+			</tr>
+			{{/if}}
+			{{#if predictedClassName}}
+			<tr>
+				<td>Predicted class</td>
+				<td class="{{#if falsePrediction}}falsePrediction{{/if}}">
+					{{predictedClassName}}
+				</td>
+			</tr>
+			{{/if}}
+			<tr>
+				<td>Earliness</td>
+				<td>%s</td>
+			</tr>
+			<tr>
+				<td>Relative Earliness</td>
+				<td>%s</td>
+			</tr>
+		</table>
+		<p>
+			{{#if otherDatapackIDs}}
+			This chat is also visualized in
+			{{#enumerate otherDatapackIDs}}
+				<a href="../../{{this}}/chat/{{@root.chatID}}"><tt>{{this}}</tt></a>{{!--
+			--}}{{/enumerate}}.
+			{{/if}}
+			<a class="bi bi-arrow-return-left" href="../../"> Go back</a>
+		</p>
+		{{/with}}
+	</div>
+
+		<div class="chart">
+			<canvas id="chartCanvas"></canvas>
+			<div class="line scrollIndicator"></div>
+			<p></p>
+		<div class ="right-align">
+			<div class="heatmap">
+			Heatmap
+			<span>
+				<div class="bar"></div>
+				<div class="markers"></div>
+				<div class="labels"><span>0</span><span>0.25</span><span>0.5</span><span>0.75</span><span>1</span></div>
+			</span>
+			</div>	
+		</div>
+		</div>
+		</div>
+	</aside>
+
+
+<div class="visualization-container">
+<div class="background-white">
+<div class="phone-mockup">
+	<div class="chat-window">
+	<main class="chat {{#if options.showRiskAnnotations}}showRiskAnnotations{{/if}}" data-risk-threshold="{{options.riskThreshold}}" data-risk-window-size="{{options.riskWindowSize}}">
+	{{#with chat}}
+	{{#each content}}
+		{{#if isMessage}}
+			{{#if isMissing}}
+				<div class="missing-message">Missing Message</div>
+			{{else}}
+				<div
+					id="msg{{number}}"
+					data-number={{number}}
+					data-prediction="{{prediction}}"
+					data-author="{{author}}"
+					class="
+						message
+						{{alignment}}
+						{{join HTMLclassNames delimiter=" "}}
+						{{#if hasLabels}}has-labels{{/if}}
+						{{#if hasMissingDate}}has-missing-date{{/if}}
+						{{#if hasMissingFuthor}}has-missing-author{{/if}}
+						{{#if isEmpty}}is-empty{{/if}}
+					"
+				>
+					<span class="body">
+						{{{body}}}
+					</span>
+					<div class="info">
+						{{#if hasLabels}}
+						<span class="labels">
+							{{#each labels}}
+							<span>{{this}}</span>
+							{{/each}}
+						</span>
+						{{/if}}
+						{{#unless hasMissingAuthor}}
+						<span class="author id">{{author}}</span>
+						{{/unless}}
+						{{#unless hasMissingDate}}
+						<date time="{{timeUTC time}}">{{timeHumanUTC time}}</date>
+						{{/unless}}
+						<a href="#msg{{number}}" class="message-num">{{number}}</a>
+					</div>
+				</div>
+			{{/if}}
+		{{else if isSeparator}}
+			<div id="seg{{number}}" class="separator"></div>
+		{{/if}}
+
+	{{/each}}
+	{{/with}}
+	</main>
+	</div>
+	</div>
+</div>
+</div>
+
+

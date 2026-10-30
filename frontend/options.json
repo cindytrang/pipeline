@@ -1,0 +1,5 @@
+{
+	"riskWindowSize": 10,
+	"riskThreshold": 5,
+	"showRiskAnnotations": true
+}

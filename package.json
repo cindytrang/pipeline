@@ -1,0 +1,9 @@
+{
+  "name": "dissertation-nlp-project",
+  "private": true,
+  "scripts": {
+    "start": "npm --prefix frontend start",
+    "dev": "npm --prefix frontend run devserver",
+    "test": "npm --prefix frontend test"
+  }
+}

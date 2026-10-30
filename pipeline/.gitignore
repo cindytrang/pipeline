@@ -1,0 +1,17 @@
+datasets/
+__pycache__/
+resources/
+legacy/
+*.pyc
+.swp
+*.csv
+*.tsv
+*.sublime*
+todo
+.fuse_hidden*
+notes
+
+# Ignore virtual environment directories
+env/
+myenv/
+laptopenv/
