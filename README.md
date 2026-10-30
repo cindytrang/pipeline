@@ -2,6 +2,18 @@
 
 A dissertation project exploring early detection of concerning behaviour in chat communications. A Python NLP pipeline annotates messages with prediction scores and labels, and a web frontend displays them as chat heatmaps and prediction charts.
 
+## Screenshots
+
+### Chat heatmap and prediction chart
+
+![Chat visualisation with message heatmap, warning indicators and prediction chart](frontend/demo.png)
+
+### Dissertation demo
+
+<img width="1728" alt="Dissertation demo interface, first screenshot" src="https://github.com/user-attachments/assets/f9ac8b76-90fb-4e47-8d63-11655ec5d036">
+
+<img width="1723" alt="Dissertation demo interface, second screenshot" src="https://github.com/user-attachments/assets/9b4f2a19-238a-41f8-9c42-5929cdddffb8">
+
 ## Run the demo
 
 Requirements: **Node.js 24** and npm. Python is needed for the datapack importer and its tests, but not to start the synthetic demo.
@@ -96,6 +108,6 @@ Export these variables before starting the frontend:
 
 Use the [improvement backlog](docs/improvements.md) and the repository's **Issues** tab to choose work. See [the testing guide](docs/testing.md) for a repeatable development loop and [dependency health](docs/dependency-health.md) for current audit findings. Weekly Dependabot proposals cover the frontend and GitHub Actions. The model environment needs a supported dependency baseline before automated Python upgrades can be introduced.
 
-Earlier project notes are preserved in the [project wiki](https://github.com/cindytrang/pipeline/wiki).
+The [project wiki](https://github.com/cindytrang/pipeline/wiki) contains the NLP pipeline and frontend documentation.
 
 Keep local datasets, model weights, credentials and generated outputs out of Git. Existing code and data notices are retained with their components.
